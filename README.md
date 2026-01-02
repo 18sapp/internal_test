@@ -39,13 +39,7 @@ El código actual presenta los siguientes problemas (entre otros):
 
 ### 1. Arquitectura y Estructura
 
-- [ ] Separar el código en una estructura de carpetas apropiada:
-  - `models/` - Modelos de datos
-  - `screens/` - Pantallas
-  - `widgets/` - Widgets reutilizables
-  - `services/` - Servicios y lógica de negocio
-  - `repositories/` - Repositorios para acceso a datos
-  - `utils/` - Utilidades y helpers
+- Definir y aplicar la arquitectura que consideres más adecuada para el proyecto, priorizando claridad, escalabilidad y buenas prácticas en la organización del código.
 
 ### 2. Modelos de Datos
 
