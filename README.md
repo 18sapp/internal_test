@@ -123,3 +123,49 @@ Se evaluará:
 - Si no completas todas las tareas, documenta qué hiciste y por qué
 
 ¡Buena suerte!
+
+---
+
+# Ejercicio Adicional - Unificación de BLoCs (Gestión de Estado)
+
+## Contexto
+
+Como parte adicional de la prueba, el proyecto incluye un flujo de ejemplo compuesto por dos pantallas:
+
+- **Screen A**: Permite agregar gastos.
+- **Screen B**: Muestra un resumen de gastos.
+
+Cada pantalla utiliza su propio BLoC y ambas funcionan correctamente de manera individual.
+
+## Situación Actual
+
+Actualmente:
+
+- Existen **dos BLoCs distintos** manejando información del mismo dominio (gastos).
+- Cada BLoC mantiene su propio estado y lógica.
+- Los cambios realizados en una pantalla **no se reflejan automáticamente** en la otra.
+
+Este comportamiento es intencional y forma parte del ejercicio.
+
+## Objetivo del Ejercicio Adicional
+
+Analizar la arquitectura actual y refactorizar la solución para que exista una **única fuente de verdad** para el dominio de gastos, manteniendo el comportamiento funcional de ambas pantallas.
+
+No se trata de corregir un error visual, sino de resolver un problema de diseño y arquitectura.
+
+## Requisitos
+
+- Identificar duplicación de estado y lógica.
+- Centralizar el estado del dominio de gastos.
+- Mantener el correcto funcionamiento de ambas pantallas.
+- Evitar soluciones basadas en comunicación manual entre BLoCs (listeners cruzados, eventos forzados, etc.).
+
+## Criterios de Evaluación (Ejercicio Adicional)
+
+Se evaluará especialmente:
+
+- Capacidad para identificar problemas de arquitectura.
+- Aplicación correcta del principio **Single Source of Truth**.
+- Uso adecuado de BLoC y gestión de estado.
+- Claridad y mantenibilidad de la solución.
+- Justificación de las decisiones técnicas.
