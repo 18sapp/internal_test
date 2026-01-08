@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:internal_test/exercises/screen_a/ui/screen_a.dart';
 
 // Variables globales
 List<Map<String, dynamic>> gastosLista = [];
@@ -262,6 +263,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
             icon: Icon(Icons.download),
             onPressed: () {
               _exportarDatos(context);
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.ads_click),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ExerciseScreenA(),
+                ),
+              );
             },
           ),
         ],
